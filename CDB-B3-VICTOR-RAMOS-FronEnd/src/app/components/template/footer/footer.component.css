@@ -1,0 +1,19 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: flex-end;
+
+    background-color: whitesmoke;
+}
+
+.footer > span {
+    font-size: 1rem;
+    font-weight: 300;  
+    color: #002C63;      
+}
+
+h1,h2,h3{
+    color: #002C63;
+}

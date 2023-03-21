@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.header .title-group {
+    padding-left: 25px;
+}
+
+.header .title-group {
+    padding-right: 5px;
+}
+.header > span{
+    color: #002C63;
+    font-size: 1.2rem;
+    font-weight: 100; 
+}

@@ -1,0 +1,17 @@
+.valor {
+    color: #002C63;
+    font-size: 1.5rem;
+    font-weight: 100; 
+    margin: 25px;
+}
+
+.valor input {
+    margin-top:20px;
+}
+
+.valor-inicial {
+    font-size: 2rem; 
+    outline: 0;
+    border-width: 0 0 1px;    
+    background-color: transparent;    
+}

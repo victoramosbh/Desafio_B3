@@ -1,0 +1,16 @@
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\CDB-B3-VICTOR-RAMOS-Test.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\CDB-B3-VICTOR-RAMOS-Test.pdb
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\CDB-B3-VICTOR-RAMOS-Domain.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\CDB-B3-VICTOR-RAMOS-Domain.pdb
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\obj\Debug\CDB-B3-VICTOR-RAMOS-Test.csproj.AssemblyReference.cache
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\obj\Debug\CDB-B3-VICTOR-RAMOS-Test.csproj.CoreCompileInputs.cache
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\obj\Debug\CDB-B3-VICTOR-RAMOS-Test.csproj.CopyComplete
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\obj\Debug\CDB-B3-VICTOR-RAMOS-Test.dll
+C:\B3\CDB-B3-VICTOR-RAMOS\CDB-B3-VICTOR-RAMOS-Test\obj\Debug\CDB-B3-VICTOR-RAMOS-Test.pdb
