@@ -21,7 +21,7 @@ Solicitamos a criação de uma Web API que receba os dados informados para o cá
 </p>
 
 ## Clonar repositório (branch master)
-```https://github.com/victoramosbh/Desafio_B3.git```
+```https://github.com/victoramosbh/Desafio_B3.git```<br>
 ```git clone --branch master https://github.com/victoramosbh/Desafio_B3.git```
 
 ## Execução
