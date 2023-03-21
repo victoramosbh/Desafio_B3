@@ -22,26 +22,27 @@ Solicitamos a criação de uma Web API que receba os dados informados para o cá
 ```https://github.com/victoramosbh/Desafio_B3.git```
 
 ## Execução
+
+As execuções dos comando deve ter como base a pasta raiz do projeto CDB-B3-VICTOR-RAMOS.
+
 #### Backend
 1. Ir para o diretório da api CDB-B3-VICTOR-RAMOS-Api<br>
  ```cd CDB-B3-VICTOR-RAMOS-Api\```
 2. Executar a api com comando dotnet<br>
-```dotnet run``` <br><br>
-Chamada para teste do endpoint **http://localhost:63160/api/investimentos/calcularcdb/?valor=10000&meses=3**.
+```dotnet run``` <br>
+Chamada para teste do endpoint  **http://localhost:63160/api/investimentos/calcularcdb/?valor=10000&meses=3**
 
 
 #### Frontend
-1. Com base na pasta raiz do projeto, alterar para o diretório do projeto do frontend<br>
- ```cd .\frontend\desafio```
-2. Antes de executar o projeto, deve ser feito o download das dependências utilizando o npm<br>
+1. Ir para o diretório do frontend CDB-B3-VICTOR-RAMOS-FronEnd<br>
+ ```cd CDB-B3-VICTOR-RAMOS-FronEnd```
+2. Fazer download das dependências<br>
 ```npm i```
-3. Iniciar utilizando o comando abaixo<br>
+3. Iniciar o servidor <br>
 ```ng serve -o```<br><br>
-Após esse comando a janela do navegador deve abrir e apresentar a tela do projeto. Caso não abra, basta abrir um browser e navegar para a página **http://localhost:4200/**
+Abrir o navegador e acessar **http://localhost:4200/**
 
-## Execução através do docker
-Caso possua o docker instalado, a forma mais fácil de ter o ambiente pronto para execução é através do comando ```docker-compose up``` que irá carregar as imagens dos dois projetos. Após as imagens terem sido carregadas, o endpoint de acesso à API será o **http://localhost/api/cdb** e a página web poderá ser acessada através do endereço **http://localhost/**<br>
 
-## Testes do backend
-Foram criado 3 projetos de testes que se encontram na pasta [backend](./backend/). Para executar os testes basta digitar o comando ```dotnet test``` dentro de cada pasta.
+## Testes Unitários
+Para executar os testes executar o comando ```dotnet test``` dentro da pasta CDB-B3-VICTOR-RAMOS-Test.
 <hr>
