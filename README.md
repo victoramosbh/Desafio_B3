@@ -15,7 +15,8 @@ Solicitamos a criação de uma tela web onde possamos informar um valor monetár
 <p>
 
 ## Backend
-Projeto criado com .NET Framework 4.8.<br>
+A WebApi deve ser desenvolvida em .NET Framework 4.7.2 ou superior.<br>
+O projeto foi criado com .NET Framework 4.8 (Web Api 2), pois estava pedindo .NET Framework.<br>
 Solicitamos a criação de uma Web API que receba os dados informados para o cálculo do CDB.
 </p>
 
@@ -49,5 +50,5 @@ Abrir o navegador e acessar **http://localhost:4200/**
 Para executar os testes via comando deve-se ir dentro da pasta CDB-B3-VICTOR-RAMOS-Test e executar no prompt:
 ```"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\TestPlatform\vstest.console.exe" CDB-B3-VICTOR-RAMOS-Test.dll```
 Obs.: deve-se localizar o path do vstest.console.exe.
-Caso não seja possível via linha de comando, executar via VS, para isso botão direito no projeto de Teste e "Run Tests".
+Caso não seja possível via linha de comando, executar via VS, botão direito no projeto de Teste e "Run Tests".
 <hr>
