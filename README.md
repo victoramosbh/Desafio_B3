@@ -31,7 +31,8 @@ Executar os comandos tendo como base a pasta raiz do projeto CDB-B3-VICTOR-RAMOS
  ```cd CDB-B3-VICTOR-RAMOS-Api\```
 2. Executar a api com comando dotnet<br>
 ```dotnet run``` <br>
-Chamada para teste do endpoint  **http://localhost:63160/api/investimentos/calcularcdb/?valor=10000&meses=3**
+Chamada para teste do endpoint  **http://localhost:63160/api/investimentos/calcularcdb/?valor=10000&meses=3** <br>
+Caso ocorrer alguma falha ao executar via comando, favor abrir o VS e executar o projeto CDB-B3-VICTOR-RAMOS-Api.
 
 
 #### Frontend
