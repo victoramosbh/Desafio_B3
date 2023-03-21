@@ -20,8 +20,9 @@ O projeto foi criado com .NET Framework 4.8 (Web Api 2), pois estava pedindo .NE
 Solicitamos a criação de uma Web API que receba os dados informados para o cálculo do CDB.
 </p>
 
-## Clonar repositório
+## Clonar repositório (branch master)
 ```https://github.com/victoramosbh/Desafio_B3.git```
+```git clone --branch master https://github.com/victoramosbh/Desafio_B3.git```
 
 ## Execução
 
