@@ -46,5 +46,8 @@ Abrir o navegador e acessar **http://localhost:4200/**
 
 
 ## Testes Unitários
-Para executar os testes executar o comando ```dotnet test``` dentro da pasta CDB-B3-VICTOR-RAMOS-Test.
+Para executar os testes via comando deve-se ir dentro da pasta CDB-B3-VICTOR-RAMOS-Test e executar no prompt:
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\TestPlatform\vstest.console.exe" CDB-B3-VICTOR-RAMOS-Test.dll
+Obs.: deve-se localizar o path do vstest.console.exe.
+Caso não seja possível via linha de comando, executar via VS, para isso botão direito no projeto de Teste e "Run Tests".
 <hr>
