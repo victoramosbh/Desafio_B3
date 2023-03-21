@@ -9,13 +9,13 @@ Avaliar a capacidade de análise do desenvolvedor e a habilidade para implementa
 <p>
 
 ## Frontend
-Projeto criado com Angular.
+Projeto criado com Angular.<br>
 Solicitamos a criação de uma tela web onde possamos informar um valor monetário positivo, e um prazo em meses maior que 1(um) para resgate da aplicação. Após solicitar o cálculo do investimento, a tela deve apresentar o resultado bruto e o resultado líquido do investimento.
 </p>
 <p>
 
 ## Backend
-Projeto criado com .NET Framework 4.8
+Projeto criado com .NET Framework 4.8.<br>
 Solicitamos a criação de uma Web API que receba os dados informados para o cálculo do CDB.
 </p>
 
