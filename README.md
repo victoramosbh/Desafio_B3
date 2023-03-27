@@ -33,7 +33,7 @@ Executar os comandos tendo como base a pasta raiz do projeto, ou seja, onde se e
  ```cd Api\```
 2. Executar a api com comando dotnet<br>
 ```dotnet run``` <br>
-Pagina Swagger **[http://localhost:63160/api/investimentos/calcularcdb/?valor=10000&meses=3](http://localhost:5044/swagger/index.html)** <br>
+Página Swagger **[http://localhost:5044/swagger/index.html](http://localhost:5044/swagger/index.html)** <br>
 Caso ocorrer alguma falha ao executar via comando, favor abrir o VS e executar o projeto Api.
 
 
@@ -48,7 +48,7 @@ Abrir o navegador e acessar **http://localhost:4200/**
 
 
 ## Testes Unitários
-Para executar os testes via comando deve-se ir dentro da pasta Api.Test e executar no prompt:
-```dotnet test```
+Para executar os testes via comando, ir no diretório Api.Test e executar no prompt:
+```dotnet test```<br>
 Caso não seja possível via linha de comando, executar via VS, botão direito no projeto de Teste e "Run Tests".
 <hr>
