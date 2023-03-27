@@ -16,25 +16,25 @@ Solicitamos a criação de uma tela web onde possamos informar um valor monetár
 
 ## Backend
 A WebApi deve ser desenvolvida em .NET Framework 4.7.2 ou superior.<br>
-O projeto foi criado com .NET Framework 4.8 (Web Api 2), pois estava pedindo .NET Framework.<br>
+A api foi desenvolvida em **ASP.NET Core 6**.<br>
 Solicitamos a criação de uma Web API que receba os dados informados para o cálculo do CDB.
 </p>
 
-## Clonar repositório (branch master)
+## Clonar repositório (branch feature/core)
 ```https://github.com/victoramosbh/Desafio_B3.git```<br>
-```git clone --branch master https://github.com/victoramosbh/Desafio_B3.git```
+```git clone --branch feature/core https://github.com/victoramosbh/Desafio_B3.git```
 
 ## Execução
 
-Executar os comandos tendo como base a pasta raiz do projeto CDB-B3-VICTOR-RAMOS.
+Executar os comandos tendo como base a pasta raiz do projeto, ou seja, onde se encontra o arquivo .sln.
 
 #### Backend
-1. Ir para o diretório da api CDB-B3-VICTOR-RAMOS-Api<br>
- ```cd CDB-B3-VICTOR-RAMOS-Api\```
+1. Ir para o diretório da api Api<br>
+ ```cd Api\```
 2. Executar a api com comando dotnet<br>
 ```dotnet run``` <br>
-Chamada para teste do endpoint  **http://localhost:63160/api/investimentos/calcularcdb/?valor=10000&meses=3** <br>
-Caso ocorrer alguma falha ao executar via comando, favor abrir o VS e executar o projeto CDB-B3-VICTOR-RAMOS-Api.
+Página Swagger **[http://localhost:5044/swagger/index.html](http://localhost:5044/swagger/index.html)** <br>
+Caso ocorrer alguma falha ao executar via comando, favor abrir o VS e executar o projeto Api.
 
 
 #### Frontend
@@ -48,8 +48,7 @@ Abrir o navegador e acessar **http://localhost:4200/**
 
 
 ## Testes Unitários
-Para executar os testes via comando deve-se ir dentro da pasta CDB-B3-VICTOR-RAMOS-Test e executar no prompt:
-```"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\TestPlatform\vstest.console.exe" CDB-B3-VICTOR-RAMOS-Test.dll```
-Obs.: deve-se localizar o path do vstest.console.exe.
+Para executar os testes via comando, ir no diretório Api.Test e executar no prompt:
+```dotnet test```<br>
 Caso não seja possível via linha de comando, executar via VS, botão direito no projeto de Teste e "Run Tests".
 <hr>
