@@ -16,7 +16,7 @@ Solicitamos a criação de uma tela web onde possamos informar um valor monetár
 
 ## Backend
 A WebApi deve ser desenvolvida em .NET Framework 4.7.2 ou superior.<br>
-A api foi desenvolvida em ASP.NET Core 6.<br>
+A api foi desenvolvida em **ASP.NET Core 6**.<br>
 Solicitamos a criação de uma Web API que receba os dados informados para o cálculo do CDB.
 </p>
 
