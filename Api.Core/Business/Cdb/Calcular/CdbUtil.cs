@@ -1,17 +1,12 @@
 ﻿using Api.Domain.Entity;
 using Api.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Api.Core.Business.Cdb.Calcular
-{    
+{
     public static class CdbUtil
     {
         public static Investimento Calcular(Investimento investimento)
-        {            
+        {
             CalcularValorBruto(investimento);
             CalcularTaxaImposto(investimento);
             CalcularValorLiquido(investimento);
@@ -24,7 +19,7 @@ namespace Api.Core.Business.Cdb.Calcular
         }
 
         private static void CalcularValorLiquido(Investimento investimento)
-        {           
+        {
             investimento.ValorLiquido = investimento.ValorBruto - ((investimento.ValorBruto - investimento.ValorInicial) * investimento.TaxaImposto);
         }
         private static void CalcularTaxaImposto(Investimento investimento)
@@ -38,5 +33,5 @@ namespace Api.Core.Business.Cdb.Calcular
             else
                 investimento.TaxaImposto = CdbParametros.TAXA_ACIMA;
         }
-    }    
+    }
 }

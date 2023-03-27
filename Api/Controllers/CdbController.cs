@@ -1,6 +1,5 @@
 using Api.Core.Business.Cdb.Calcular;
 using Api.Core.DTOs;
-using Api.Domain.Entity;
 using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -12,7 +11,7 @@ namespace Api.Controllers
     [Route("api/[controller]")]
     public class CdbController : BaseController
     {
-        public CdbController(IMediator mediator, IMapper mapper) :base(mediator, mapper) { }
+        public CdbController(IMediator mediator, IMapper mapper) : base(mediator, mapper) { }
 
         [HttpPost]
         public async Task<ActionResult<InvestimentoResultDto>> Calcular([FromBody] InvestimentoDto investimentoDto)
@@ -21,10 +20,10 @@ namespace Api.Controllers
 
             try
             {
-                investimentoResultDto = await _mediator.Send(new CalcularCdbRequest(investimentoDto));                
+                investimentoResultDto = await _mediator.Send(new CalcularCdbRequest(investimentoDto));
             }
             catch (Exception ex)
-            {                
+            {
                 return new ObjectResult(new { message = ex.Message }) { StatusCode = Convert.ToInt32(HttpStatusCode.InternalServerError) };
             }
 

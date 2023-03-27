@@ -2,11 +2,6 @@
 using Api.Domain.Entity;
 using AutoMapper;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Api.Core.Business.Cdb.Calcular
 {
@@ -15,7 +10,7 @@ namespace Api.Core.Business.Cdb.Calcular
         private readonly InvestimentoDtoValidator _investimentoDtoValidator;
         private IMapper _mapper;
 
-        public CalcularCdbHandler(InvestimentoDtoValidator investimentoDtoValidator, IMapper mapper) => (_investimentoDtoValidator,_mapper) = (investimentoDtoValidator,mapper);
+        public CalcularCdbHandler(InvestimentoDtoValidator investimentoDtoValidator, IMapper mapper) => (_investimentoDtoValidator, _mapper) = (investimentoDtoValidator, mapper);
 
         public async Task<InvestimentoResultDto> Handle(CalcularCdbRequest request, CancellationToken cancellationToken)
         {
@@ -29,7 +24,7 @@ namespace Api.Core.Business.Cdb.Calcular
                 var investimento = _mapper.Map<Investimento>(request.Request);
                 CdbUtil.Calcular(investimento);
                 InvestimentoResultDto = _mapper.Map<InvestimentoResultDto>(investimento);
-            }               
+            }
 
             return InvestimentoResultDto;
         }

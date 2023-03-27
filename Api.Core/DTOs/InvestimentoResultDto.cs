@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Api.Core.DTOs
+﻿namespace Api.Core.DTOs
 {
     public class InvestimentoResultDto
     {
@@ -12,7 +6,7 @@ namespace Api.Core.DTOs
         public double ValorLiquido { get; set; }
         public string Menssagem { get; set; }
 
-        public InvestimentoResultDto(double valorBruto, double valorLiquido,string menssagem)
+        public InvestimentoResultDto(double valorBruto, double valorLiquido, string menssagem)
         {
             this.ValorBruto = valorBruto;
             this.ValorLiquido = valorLiquido;

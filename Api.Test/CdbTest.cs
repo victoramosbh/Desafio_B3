@@ -24,10 +24,10 @@ namespace Test
 
         [Fact]
         public async void Cdb_DeveCalcularCorretoComPrazo6()
-        {            
+        {
             InvestimentoDto investimentoDto = new InvestimentoDto() { ValorInicial = 20000, Prazo = 6 };
             CalcularCdbRequest request = new CalcularCdbRequest(investimentoDto);
-            InvestimentoDtoValidator validator = new InvestimentoDtoValidator();            
+            InvestimentoDtoValidator validator = new InvestimentoDtoValidator();
 
             CalcularCdbHandler handler = new CalcularCdbHandler(validator, _mapper);
             var investimentoResult = await handler.Handle(request, new CancellationToken());
