@@ -1,6 +1,6 @@
 export interface Investimento {
-    ValorBruto: number;
-    ValorLiquido: number;
-    Mensagem: string;
+    valorBruto: number;
+    valorLiquido: number;
+    menssagem: string;
 }
 

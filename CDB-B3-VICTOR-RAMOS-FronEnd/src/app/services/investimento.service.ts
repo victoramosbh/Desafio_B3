@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { catchError } from 'rxjs/operators';
+import { take,catchError  } from 'rxjs/operators';
 import { Investimento } from '../models/investimento';
+import { InvestimentoRequest } from '../models/investimento-request';
 import { environment } from './../../environments/environment'
 
 @Injectable({
@@ -18,12 +19,11 @@ export class InvestimentoService {
 
   constructor(private httpClient: HttpClient) { }
 
-  calcularCdb(valor: number,prazo: number): Observable<Investimento> {
-    return this.httpClient.get<Investimento>(this.url + '/?valor=' + valor + "&meses=" + prazo)
-      .pipe(
-        catchError(this.handleError)
-      )
-  }
+
+   calcularCdb(data: InvestimentoRequest): Observable<Investimento> {    
+    return this.httpClient.post<Investimento>(this.url, data, this.httpOptions)
+    .pipe(take(1));
+  } 
 
   handleError(error: HttpErrorResponse) {
     let errorMessage = '';
@@ -34,7 +34,7 @@ export class InvestimentoService {
       // Erro ocorreu no lado do servidor
       errorMessage = "Código do erro: " + error.status  + "; Menssagem: " + error.message;
     }
-    console.log(errorMessage);
+    console.error(errorMessage);
     return throwError(errorMessage);
   };
   

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Investimento } from './models/investimento';
+import { InvestimentoRequest } from './models/investimento-request';
 import { InvestimentoService } from './services/investimento.service';
 
 
@@ -12,7 +13,7 @@ export class AppComponent implements OnInit {
 
   valorInicial: number = 0;
   prazo: number = 0;
-  investimento: Investimento = { ValorBruto: 0, ValorLiquido: 0, Mensagem: "" };;
+  investimento: Investimento = { valorBruto: 0, valorLiquido: 0,menssagem: ""};;
 
   constructor(private investimentoService: InvestimentoService) {  }
 
@@ -28,14 +29,22 @@ export class AppComponent implements OnInit {
 
   calcularCdb() {
 
-    this.investimentoService.calcularCdb(this.valorInicial, this.prazo).subscribe((investimento: Investimento) => {
-      this.investimento = investimento;
+    const dadosRequisicao = {
+      valorInicial: this.valorInicial,
+      prazo: this.prazo
+    } as InvestimentoRequest;
 
-      if (this.investimento.Mensagem != null && this.investimento.Mensagem != "") {
-        confirm(this.investimento.Mensagem)
-      }
-    });
-    
+    this.investimentoService.calcularCdb(dadosRequisicao).subscribe({
+      next: (response: Investimento) => {        
+        this.investimento = { ...response };
+        if (this.investimento.menssagem != null && this.investimento.menssagem != "") {
+          confirm(this.investimento.menssagem)
+        } 
+      },
+      error: (error: Error) => {        
+        console.error(JSON.stringify(error));
+      },
+    }).add();    
   }
 
   click() {

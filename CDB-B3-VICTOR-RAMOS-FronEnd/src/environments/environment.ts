@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:63160/api/investimentos/calcularcdb'
+  apiUrl: 'http://localhost:5044/api/Cdb'
 };
 
 /*
